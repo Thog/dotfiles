@@ -48,4 +48,6 @@ source ~/.vim/plugins.vim
 source ~/.vim/utils.vim
 
 filetype plugin indent on
-colorscheme molokai
+if (empty($DOT_INSTALL))
+	colorscheme molokai
+endif
