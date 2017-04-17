@@ -1,7 +1,13 @@
 if has('nvim')
 	" Enable python interpreter
-	let g:python_host_prog = '/usr/bin/python'
-	let g:loaded_python3_provider = 1
+	let g:python_host_prog = '/usr/bin/python2'
+	let g:deoplete#enable_at_startup = 1
+	let g:deoplete#enable_smart_case = 1
+	let g:deoplete#sources = {}
+	let g:deoplete#sources.elixir = ['omni']
+	let g:deoplete#omni#input_patterns = {}
+	let g:deoplete#omni#input_patterns.ruby = ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
+	let g:deoplete#omni#input_patterns.elixir = ['[^. *\t]\.\w*', '[a-zA-Z_]\w*::']
 	set shell=/bin/zsh
 
 	" Import School base vimrc
@@ -15,7 +21,6 @@ if has('nvim')
 endif
 
 syntax on
-set omnifunc=syntaxcomplete#Complete
 let g:current_path_for_nerd_init=expand('%:p:h')
 let g:ctrlp_map = '<C-f>'
 

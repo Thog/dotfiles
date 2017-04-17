@@ -1,13 +1,9 @@
-noremap <Space><Space>		:tabedit ~/.vimrc<CR>
 noremap <C-h> :GundoToggle<CR>
 noremap <C-w>				:q!<CR>
-noremap <S-Tab>				:tabprevious<CR>
-noremap <Tab>				:tabnext<CR>
 noremap <C-r>				:NERDTreeToggle<CR>:e<CR>:NERDTreeToggle<CR>
 noremap <C-d>				:vs
 noremap <S-d>				:split
 noremap <C-t>				:tabedit
-noremap <C-k>				:!(make)<CR>
 noremap <C-g>				:NERDTreeToggle<CR>
 noremap <S-Right>			<C-w><Right>
 noremap <S-Left>			<C-w><Left>
@@ -16,7 +12,6 @@ noremap <S-Down>			<C-w><Down>
 noremap <C-u>				<C-r>
 noremap <C-v>				p
 noremap <C-c>				y
-noremap <C-x>				x
 noremap <C-a>				gg<S-v>G
 noremap <silent>	<C-s>	:w!<CR>
 noremap <silent>	<C-q>	:qa<CR>
@@ -27,7 +22,6 @@ inoremap <C-k>				<Esc>:help key-notation<CR>
 inoremap <C-t>				<Esc>:tabedit
 inoremap <C-v>				<Esc>pi
 inoremap <C-c>				<Esc>yi
-inoremap <C-x>				<Esc>xi
 inoremap <C-u>				<Esc><C-r>i
 inoremap <C-a>				<Esc>gg<S-v>G
 inoremap <silent>	<C-s>	<Esc>:w!<CR>

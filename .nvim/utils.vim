@@ -2,7 +2,7 @@ autocmd	BufNewFile	*.h	call	Generate_h()
 autocmd VimEnter * call s:actionForOpen()
 autocmd BufCreate * call s:addingNewTab()
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
+au BufNewFile,BufRead *.ex set filetype=elixir
 function! s:actionForOpen()
 	let filename = expand('%:t')
 	NERDTree

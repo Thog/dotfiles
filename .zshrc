@@ -29,3 +29,6 @@ alias hsize='du -s * | sort -rn | cut -f2 | tr "\n" "\0" | xargs -0 -I {} du -sh
 alias isize='du -s .* | sort -rn | cut -f2 | tr "\n" "\0" | xargs -0 -I {} du -sh "{}"'
 alias vi='nvim'
 alias vim='nvim'
+source "$HOME/.kiex/scripts/kiex"
+source /home/thog/erlang/R18/activate
+source $HOME/.kiex/elixirs/elixir-1.3.4.env
